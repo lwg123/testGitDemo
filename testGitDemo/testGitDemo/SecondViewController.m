@@ -20,16 +20,23 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     self.title = @"第二个页面";
+    
+    [self test1];
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)test1 {
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 40)];
+    [btn setTitle:@"点击跳转" forState:UIControlStateNormal];
+    [btn setBackgroundColor:[UIColor lightGrayColor]];
+    [btn setTitleColor:[UIColor purpleColor] forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
 }
-*/
+
+- (void)btnClick {
+    NSLog(@"点击了跳转页面");
+}
+
 
 @end
