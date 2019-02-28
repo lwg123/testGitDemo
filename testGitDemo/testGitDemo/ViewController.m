@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <AFNetworking.h>
+#import "SecondViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -24,6 +25,7 @@
     _myTableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     _myTableView.delegate = self;
     _myTableView.dataSource = self;
+    
     [self.view addSubview:_myTableView];
     
     [_myTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
@@ -60,7 +62,7 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.textLabel.text = [NSString stringWithFormat:@"cell-%ld",(long)indexPath.row];
     
     return cell;
@@ -68,7 +70,8 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    SecondViewController *secondVC = [[SecondViewController alloc] init];
+    [self.navigationController pushViewController:secondVC animated:YES];
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath

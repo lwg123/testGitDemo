@@ -14,6 +14,8 @@
 		D1FB31B52227CA490033BAD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1FB31B42227CA490033BAD6 /* Assets.xcassets */; };
 		D1FB31B82227CA490033BAD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1FB31B62227CA490033BAD6 /* LaunchScreen.storyboard */; };
 		D1FB31BB2227CA490033BAD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FB31BA2227CA490033BAD6 /* main.m */; };
+		D1FB31C42227D79E0033BAD6 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FB31C22227D79E0033BAD6 /* SecondViewController.m */; };
+		D1FB31C52227D79E0033BAD6 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1FB31C32227D79E0033BAD6 /* SecondViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,9 @@
 		D1FB31B72227CA490033BAD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1FB31B92227CA490033BAD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1FB31BA2227CA490033BAD6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D1FB31C12227D79E0033BAD6 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		D1FB31C22227D79E0033BAD6 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		D1FB31C32227D79E0033BAD6 /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +82,9 @@
 				D1FB31AC2227CA470033BAD6 /* AppDelegate.m */,
 				D1FB31AE2227CA470033BAD6 /* ViewController.h */,
 				D1FB31AF2227CA470033BAD6 /* ViewController.m */,
+				D1FB31C12227D79E0033BAD6 /* SecondViewController.h */,
+				D1FB31C22227D79E0033BAD6 /* SecondViewController.m */,
+				D1FB31C32227D79E0033BAD6 /* SecondViewController.xib */,
 				D1FB31B12227CA470033BAD6 /* Main.storyboard */,
 				D1FB31B42227CA490033BAD6 /* Assets.xcassets */,
 				D1FB31B62227CA490033BAD6 /* LaunchScreen.storyboard */,
@@ -92,7 +100,6 @@
 				CAF94B6489C0033C51370BA9 /* Pods-testGitDemo.debug.xcconfig */,
 				B54E72A661BB411AC1607638 /* Pods-testGitDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -154,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1FB31C52227D79E0033BAD6 /* SecondViewController.xib in Resources */,
 				D1FB31B82227CA490033BAD6 /* LaunchScreen.storyboard in Resources */,
 				D1FB31B52227CA490033BAD6 /* Assets.xcassets in Resources */,
 				D1FB31B32227CA470033BAD6 /* Main.storyboard in Resources */,
@@ -192,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1FB31C42227D79E0033BAD6 /* SecondViewController.m in Sources */,
 				D1FB31B02227CA470033BAD6 /* ViewController.m in Sources */,
 				D1FB31BB2227CA490033BAD6 /* main.m in Sources */,
 				D1FB31AD2227CA470033BAD6 /* AppDelegate.m in Sources */,
