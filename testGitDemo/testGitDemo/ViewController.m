@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <AFNetworking.h>
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -26,6 +27,20 @@
     [self.view addSubview:_myTableView];
     
     [_myTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+    
+    
+    
+}
+
+- (void)demo1 {
+    
+    [[AFHTTPSessionManager manager] POST:@"" parameters:@{} progress:^(NSProgress * _Nonnull uploadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+    }];
     
 }
 
