@@ -30,7 +30,7 @@
     
     [_myTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     
-    
+    NSLog(@"测试一下好不好");
     
 }
 
