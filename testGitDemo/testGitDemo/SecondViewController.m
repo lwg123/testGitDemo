@@ -36,6 +36,9 @@
 
 - (void)btnClick {
     NSLog(@"点击了跳转页面");
+    NSLog(@"点击了跳转页面");
+    NSLog(@"点击了跳转页面");
+    
 }
 
 
